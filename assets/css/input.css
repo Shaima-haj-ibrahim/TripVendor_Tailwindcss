@@ -46,6 +46,13 @@
     }
 }
 
+@layer utilities{
+    .bg-offer{
+        background-image: url('../image/special/bg-special-offer.png');
+    }
+}
+
+
 
 @utility test{
      border: 1px solid red;
@@ -89,4 +96,8 @@
   .main-container {
     @apply w-full mx-auto px-5 lg:px-[50px];
   }
+}
+
+@utility h2{
+    @apply text-[48px] text-black font-prompt font-bold
 }
