@@ -13,18 +13,18 @@
     <!--main-container max-w-[calc(100%-100px)]-->
     <!--section header-->
 
-    <header class="h-54px bg-black py-[20px]">
+    <header class="py-5 bg-black ">
 
-     <div class="main-container flex flex-col">
+     <div class="main-container ">
      
-      <div class=" flex flex-row justify-between">
-        <div class="left flex flex-row gap-[30px]"> 
-            <div class="row gap-[10px] text-[16px] text-white/65 font-nunito ">
-                <i class="fa-solid fa-envelope" style="color: #ffffffa6;"></i>
+      <div class=" flex flex-col md:flex-row  md:justify-between md:items-center gap-4">
+        <div class="left flex flex-col sm:flex-row  gap-4 sm:gap-8 "> 
+            <div class="row items-center gap-2 hover:text-white transition duration-300 text-[16px] text-white/65 font-nunito ">
+                <i class="fa-solid fa-envelope" ></i>
                 <span>info@example.com</span>
             </div>
 
-             <div class="row gap-[10px] text-[16px] text-white/65 font-nunito">
+             <div class="row items-center gap-2.5  hover:text-white transition duration-300 text-[16px] text-white/65 font-nunito">
                 <i class="fa-solid fa-location-dot" style="color:  text-muted; "></i>
                 <span> 132, Tic St, Wingston, New York 12401</span>
             </div>
@@ -32,11 +32,11 @@
 
         </div>
 
-        <div class="right flex flex-row gap-[15px]">
-           <i class="fa-brands fa-facebook-f" style="color:#ffffffa6;"></i>
-           <i class="fa-brands fa-instagram" style="color:#ffffffa6;"></i>
-           <i class="fa-brands fa-twitter" style="color:#ffffffa6;"></i>
-           <i class="fa-brands fa-linkedin-in" style="color:#ffffffa6;"></i>
+        <div class="right flex flex-row gap-4 text-[#ffffffa6]">
+           <i class="fa-brands fa-facebook-f hover:text-white hover:scale-110 transition duration-300 cursor-pointer" ></i>
+           <i class="fa-brands fa-instagram hover:text-white hover:scale-110 transition duration-300 cursor-pointer "></i>
+           <i class="fa-brands fa-twitter hover:text-white hover:scale-110 transition duration-300 cursor-pointer "></i>
+           <i class="fa-brands fa-linkedin-in hover:text-white hover:scale-110 transition duration-300 cursor-pointer" ></i>
         </div>
       </div>
 
@@ -50,110 +50,114 @@
 
     <!-- section header part2-->
         <section>
-            <div class="main-container max-w-[calc(100%-100px)] bg-white">
-                 <div class="row justify-between">
+            <div class="main-container bg-white">
+                 <div class="row  max-lg:justify-between w-full ">
 
-                    <img src="./assets/image/logo.png" class="w-[170px] h-[40px]"/>
-                    <div class="row gap-[45px]">
+                    <img src="./assets/image/logo.png" class="w-[150px] lg:w-[170px] h-auto"/>
+
+                    <div class=" hidden lg:row gap-11 ms-auto mr-8 ">
                     <ul class="row gap-[30px] font-nunito">
-                        <li>Home</li>
-                        <li>Tours</li>
-                        <li>Destinations</li>
-                        <li>Pages</li>
-                        <li>FAQ </li>
-                        <li>Contact</li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">Home</li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">Tours</li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">Destinations</li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">Pages</li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">FAQ </li>
+                        <li class="hover:text-primary transition duration-300 cursor-pointer">Contact</li>
                     </ul>
                     
-                    <i class="fa-solid fa-arrow-right-to-bracket" style="color:#151415;"></i>
-                    <i class="fa-solid fa-magnifying-glass" style="color: #151415;"></i>
+                    <i class="fa-solid fa-arrow-right-to-bracket text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
+                    <i class="fa-solid fa-magnifying-glass text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
+                   
+                </div>
 
-                    <div>
-                        <button class="border-none outline-0 w-[200px] h-[78px] bg-[#4D40CA] row gap-[16px] centre text-white font-nunito"> Explore more <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
-                        
-                    </div>
-                    </div>
+                    <button class=" hover:bg-black transition-all duration-300 hover:scale-105
+                         border-none outline-0 w-[150px] xl:w-[180px] h-[60px] xl:h-[70px]
+                          bg-[#4D40CA] row gap-[16px] centre text-white font-nunito">
+
+                            <p>Explore more</p>
+                             <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+
+                    </button>
+
                  </div>
 
             </div>
         </section>
 
     <!--section hero-->
-    <section class="hero w-full h-[830px]">
+    <section class="hero w-full min-h-screen h-auto relative lg:h-[830px] max-lg:mb-20">
        
-     <div class="bg-heroo w-full h-[780px] bg-cover bg-center bg-no-repeat relative ">
+     <div class="bg-heroo w-full min-h-screen lg:h-[780px]  bg-cover bg-center bg-no-repeat relative ">
         <img src="./assets/image/bg-hero-decoration.png " class="absolute bottom-[145px] right-[200px]"  />
 
-            <div class="main-container max-w-[calc(100%-100px)] stack justify-center gap-[10px]  h-full ">
+            <div class="main-container stack justify-center max-lg:items-center h-screen  gap-[10px]  ">
               
-                 <p class="text-secondary text-[22px] font-prompt">Tour & Travel Agency</p>
+                 <p class="text-secondary text-[18px] sm:text-[20px] lg:text-[22px] font-prompt">Tour & Travel Agency</p>
                    
-                 <div class="flex flex-row items-center justify-between  w-full ">
-                    <div class="flex items-center justify-center w-[60px] h-[60px] circle bg-white/20">
+                 <div class="flex flex-col gap-6 lg:flex-row items-center justify-between  w-full ">
+
+                    <div class="flex items-center justify-center w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] circle bg-white/20 hover:bg-primary transition duration-300 cursor-pointer">
                          <i class="fa-solid fa-arrow-left bg" style="color: #ffffff;"></i>
                     </div>
-                    <h1 class="text-[92px] max-w-[700px] text-center text-white">Explore The <br/> Global Worlds </h1>
-                    <div class="flex items-center justify-center w-[60px] h-[60px] circle bg-white/20">
-                         <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+
+                    <h1 class="text-[40px] sm:text-[55px] md:text-[70px] lg:text-[92px] max-w-[700px] text-center text-white">Explore The <br/> Global Worlds </h1>
+
+                    <div class="flex items-center justify-center w-[50px] lg:w-[60px] h-[50px] lg:h-[60px] circle bg-white/20 hover:bg-primary transition duration-300 cursor-pointer">
+                         <i class="fa-solid fa-arrow-right bg" style="color: #ffffff;"></i>
                     </div>
+
                 </div>
 
-                 <p class="text-[20px] text-white">Velit integer eu tincidunt scelerisque. Sodales volutpat neque fermentum malesuada</p>
+                 <p class="text-[16px] sm:text-[18px] lg:text-[20px]  text-white text-center">Velit integer eu tincidunt scelerisque. Sodales volutpat neque fermentum malesuada</p>
             
             </div>
-         <div class=" w-[calc(100%-100px)] h-[132px]  ml-[50px] absolute -bottom-15 bg-white rounded-[60px] shadow[0_10px_70px_rgba(0,0,0,0.2)] py-[35px] px-[40px] flex flex-row items-start justify-between gap-[80px]">
-             <div class="flex flex-row items-start gap-[15px]">
+
+         <div class="w-[calc(100%-40px)] lg:w-[calc(100%-100px)] h-auto absolute  left-0 right-0 mx-auto top-full -translate-y-1/2 
+                    bg-white rounded-full shadow-[0_10px_70px_rgba(0,0,0,0.2)]
+                   grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center justify-items-center gap-3 lg:gap-20 py-4 px-10">
+
+             <div class="flex flex-row items-start gap-4  lg:w-auto hover:bg-gray-50 rounded-xl p-3 hover:bg-gray-50 transition duration-300 cursor-pointer">
                 <img src="./assets/image/location-arrow.png" class="w-[19px] h-[19px] object-contain"/>
-                <div class="flex flex-col gap-[15px]">
+                <div class="flex flex-col gap-4">
                     <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Destination</p>
-                    <p class="text-[18px] text-black font-bold font-nunito"> Select Destination</p>
+                    <p class="text-[18px] text-black font-bold font-nunito whitespace-nowrap "> Select Destination</p>
                 </div>
 
              </div>  
              
-             <div class="flex flex-row items-start gap-[15px]">
+             <div class="flex flex-row items-start gap-4  lg:w-auto hover:bg-gray-50 rounded-xl p-3 hover:bg-gray-50 transition duration-300 cursor-pointer">
                 <img src="./assets/image/location-arrow.png" class="w-[19px] h-[19px] object-contain"/>
-                <div class="flex flex-col gap-[15px]">
-                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Destination</p>
-                    <p class="text-[18px] text-black font-bold font-nunito"> Select Destination</p>
+                <div class="flex flex-col gap-4">
+                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Duration</p>
+                    <p class="text-[18px] text-black font-bold font-nunito whitespace-nowrap "> Select Duration </p>
                 </div>
 
              </div>    
 
-             <div class="flex flex-row items-start gap-[15px]">
+             <div class="flex flex-row items-start gap-4  lg:w-auto hover:bg-gray-50 rounded-xl p-3 hover:bg-gray-50 transition duration-300 cursor-pointer">
                 <img src="./assets/image/location-arrow.png" class="w-[19px] h-[19px] object-contain"/>
-                <div class="flex flex-col gap-[15px]">
-                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Destination</p>
-                    <p class="text-[18px] text-black font-bold font-nunito"> Select Destination</p>
+                <div class="flex flex-col gap-4  w-full">
+                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Departure Date</p>
+                    <p class="text-[18px] text-black font-bold font-nunito  whitespace-nowrap "> e.g. 21-04-2025</p>
                 </div>
 
              </div>    
 
-             <div class="flex flex-row items-start gap-[15px]">
+             <div class="flex flex-row items-start gap-4  lg:w-auto hover:bg-gray-50 rounded-xl p-3 hover:bg-gray-50 transition duration-300 cursor-pointer">
                 <img src="./assets/image/location-arrow.png" class="w-[19px] h-[19px] object-contain"/>
-                <div class="flex flex-col gap-[15px]">
-                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Destination</p>
-                    <p class="text-[18px] text-black font-bold font-nunito"> Select Destination</p>
+                <div class="flex flex-col gap-4 ">
+                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Time Slot</p>
+                    <p class="text-[18px] text-black font-bold font-nunito whitespace-nowrap"> Select a slot </p>
                 </div>
 
              </div>    
 
-             <div class="flex flex-row items-start gap-[15px]">
-                <img src="./assets/image/location-arrow.png" class="w-[19px] h-[19px] object-contain"/>
-                <div class="flex flex-col gap-[15px]">
-                    <p class="text-[14px] text-[#8E8F8F] font-semibold font-nunito">Destination</p>
-                    <p class="text-[18px] text-black font-bold font-nunito"> Select Destination</p>
-                </div>
-
-             </div>    
-             <div class="flex flex-row items-start gap-[15px]">
-                
-                <button type="submit" class="border-none outline-0 bg-primary text-white row items-center justify-center gap-[5px] w-[170px] h-[55px] rounded-full">
+                <button type="submit" class="border-none outline-0 bg-primary text-white row items-center justify-center gap-[5px] w-[140px] sm:w-[150px] md:w-[160px] lg:w-[170px] h-[40px] sm:h-[45px] md:h-[50px] lg:h-[55px] rounded-full hover:bg-black transition duration-300 hover:scale-105">
                      <p>Search</p>
                      <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                 </button>
 
-             </div>    
-         </div> 
+        </div> 
 
        </div>
     </section>
@@ -168,7 +172,8 @@
                  <div class="flex flex-col justify-center items-center md:flex-col lg:flex-row  lg:justify-between">
 
                <h2 class="text-black text-[48px] font-prompt font-bold mt-[7px]">Trendy Travel Locations</h2>
-               <button type="submit" class="borde-none outline-0 bg-secondary w-[230px] h-[66px] rounded-full flex flex-row items-center justify-center gap-[30px]">
+               <button type="submit" class="borde-none outline-0 bg-secondary w-[230px] h-[66px] rounded-full flex flex-row items-center justify-center gap-[30px]
+                hover:bg-black transition duration-300 hover:scale-105">
                 <p class="text-[17px] font-nunito font-bold text-white">Explore More</p>
                 <div class="flex items-center justify-center bg-white w-[48px] h-[48px] rounded-full">
                     <i class="fa-solid fa-arrow-right" style="color:#000000;"></i>
@@ -226,12 +231,12 @@
      </section>
 
      <!--section TripVendor Agenc-->
-     <section class=" bg-background  h-[946px] ">
-        <div class="main-container max-w-[calc(100%-100px)]">
-         <div class="  grid grid-cols-[545px_minmax(0,1fr)] gap-[84px]  py-[120px] ">
-             <div class=" w-[545px] h-[705.67px] relative">
-                 <img src="./assets/image/TripVendor Agenc/forest.png" class="w-full h-full object-contain rounded-4xl overflow-hidden "/>
-                 <div class="w-[212px] h-[169px] bg-secondary rounded-4xl absolute bottom-[30px] left-[30px] "> 
+     <section class=" bg-background  h-auto ">
+        <div class="main-container ">
+         <div class=" grid grid grid-cols-1 lg:grid-cols-[545px_minmax(0,1fr)] gap-[84px] py-[60px] lg:py-[120px] ">
+             <div class=" w-full lg:w-[545px] sm:px-5 md:px-10 xl:px-5 relative  aspect-[545/600] lg:aspect-auto">
+                 <img src="./assets/image/TripVendor Agenc/forest.png" class="w-full h-full object-cover rounded-4xl  "/>
+                 <div class="w-full max-w-[212px] h-[169px] bg-secondary rounded-4xl absolute left-8 bottom-8  "> 
                     <div class="flex flex-row items-start justify-start mx-auto w-[150px] h-[78px]">
                        <p class="test-white text-[60px] font-prompt font-extrabold  leading-[130px] text-white ">30+</p>
                        
@@ -242,57 +247,63 @@
              </div>
 
              <div class="flex flex-col justify-start items-start ">
-                <p class="text-[16px] text-primary font-nunito font-semibold mb-[7px]">About TripVendor Agenc</p>
-                <h2 class="text-black text-[48px] font-prompt font-bold mb-[28px] ">Our Journey Memorable <br/> Adventures Worldwide</h2>
-                <p class="text-muted text-[16px] font-nunito font-medium  mb-[34px] w-full lg:max-w-[700px]">We offer carefully curated destinations and tours that capture the true essence of location,<br/>
+                <p class=" text-[14px] lg:text-[16px] text-primary font-nunito font-semibold  mb-[5px] lg:mb-[7px]">About TripVendor Agenc</p>
+                <h2 class="text-black text-[38px] lg:text-[48px] font-prompt font-bold mb-[28px] ">Our Journey Memorable <br/> Adventures Worldwide</h2>
+                <p class="text-muted text-[14px] lg:text-[16px] font-nunito font-medium mb-[30px] lg:mb-[34px] w-full lg:max-w-[700px]">We offer carefully curated destinations and tours that capture the true essence of location,<br/>
                     ensuring you experience. Our attraction pass save you more than buying individual tickets for your tour package system.</p>
-                <div class="w-[712px] h-[120px] bg-white border-l-6 border-[#4D40CA] rounded-md mb-[35px]">
-                     <p class="text-[16px] text-black font-prompt font-semibold text-start mt-[31px] ml-[31px]">“Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor erat <br/>
-                         felis and sed vehicula tortor malesuada gravida” </p>
-                </div>
+              
+                    <div class="w-full max-w-[712px]  bg-white border-l-[6px] border-[#4D40CA]  
+                    rounded-md p-6 sm:p-8 mb-8">
+                        <p class="text-sm sm:text-base lg:text-[16px] text-black font-prompt font-semibold ">
+                                 “Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor erat
+                                  felis and sed vehicula tortor malesuada gravida”
+                          </p>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[50px] lg:mb-[50px]">
-                    <div class="w-[300px] h-[114px] grid grid-rows-3 gap-[12px]">
+                    </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-3  xl:gap-[50px] mb-8 lg:mb-[40px]">
+                    <div class=" w-full  flex flex-col gap-3">
                         <div class="flex flex-row gap-[8px] items-center">
                             <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold"> Trusted, Local Travel Experts</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold"> Trusted, Local Travel Experts</p>
                         </div>
 
                         <div class="flex flex-row gap-[8px] items-center">
                             <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold">  Flexible, Hassle-Free Bookings</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold">  Flexible, Hassle-Free Bookings</p>
                         </div>
 
                         <div class="flex flex-row gap-[8px] items-center">
                            <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold">  Real-Time Itinerary Updates</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold">  Real-Time Itinerary Updates</p>
                         </div>
 
                     </div>
 
-                     <div class="w-[300px] h-[114px] grid grid-rows-3 gap-[12px]">
+                     <div class="w-full  flex flex-col gap-3">
                         <div class="flex flex-row gap-[8px] items-center">
                             <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold">  Trusted, Local Travel Experts</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold">  Trusted, Local Travel Experts</p>
                         </div>
 
                         <div class="flex flex-row gap-[8px] items-center">
                             <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold">  Flexible, Hassle-Free Bookings</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold">  Flexible, Hassle-Free Bookings</p>
                         </div>
 
                         <div class="flex flex-row gap-[8px] items-center">
                            <i class="fa-regular fa-circle-check" style="color: #4D40CA;"></i>
-                            <p class="text-muted text-[18px] font-nunito font-bold"> Real-Time Itinerary Updates</p>
+                            <p class="text-muted text-[16px] sm:text-[18px] font-nunito font-bold"> Real-Time Itinerary Updates</p>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 gap-[20px]">
-                    <button type="submit" class="borde-none outline-0 bg-primary w-[312px] h-[66px] rounded-full flex flex-row items-center justify-center gap-[30px]">
-                         <p class="text-[17px] font-nunito font-bold text-white">More About TripVendor</p>
-                         <div class="flex items-center justify-center bg-white w-[48px] h-[48px] rounded-full">
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-5 xl:gap-[24px]">
+                    <button type="submit" class="borde-none outline-0 bg-primary w-full px-3 max-w-[312px] h-[60px] max-h-[66px] rounded-full flex flex-row items-center justify-center gap-4 lg:gap-[30px]
+                     hover:bg-black transition duration-300 hover:scale-105">
+                         <p class=" text-[14px] lg:text-[17px] font-nunito font-bold text-white">More About TripVendor</p>
+                         <div class="flex items-center justify-center bg-white size-[40px] lg:size-[48px] rounded-full">
                            <i class="fa-solid fa-arrow-right" style="color:#000000;"></i>
                          </div>
                     </button>
@@ -303,23 +314,22 @@
           </div>
         </div>  
      </section>
-
-
-     <section class="bg-background  py-[120px]">
+ 
+     <section class="bg-background py-[80px] lg:py-[120px]">
            
-       <div class="main-container max-w-[calc(100%-100px)]">
-            <div class="h-[393px]">
+       <div class="main-container">
+            <div class="h-auto">
 
-                <p class="max-w-[650x] text-muted text-[18px] font-nunito font-medium text-center ">Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,<br/>
+                <p class=" w-full max-w-[650x] text-muted text-[15px] lg:text-[18px] font-nunito font-medium text-center ">Join Hands with Our Trusted Partners to Discover Exclusive Travel Experiences,<br/>
                     Unmatched Comfort, and Seamless Journeys Worldwide
                 </p>
-                <div class="h-[120px] grid grid-cols-6 gap-[100px] mt-[50px]">
-                    <img src="./assets/image/TripVendor Agence2/adventure.png" class="w-[120px] h-[120px]"/>
-                    <img src="./assets/image/TripVendor Agence2/campin.png" class="w-[130px] h-[120px]"/>
-                    <img src="./assets/image/TripVendor Agence2/forest2.png" class="w-[120px] h-[120px]"/>
-                    <img src="./assets/image/TripVendor Agence2/world.png" class="w-[130px] h-[120px]"/>
-                    <img src="./assets/image/TripVendor Agence2/wild forest.png" class="w-[110px] h-[120px]"/>
-                    <img src="./assets/image/TripVendor Agence2/camping.png" class="w-[100px] h-[120px]"/>
+                <div class="h-auto grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-6 gap-[60px] sm:gap-[70px] md:gap-[80px] lg:gap-[90px] mt-[50px] justify-items-center">
+                    <img src="./assets/image/TripVendor Agence2/adventure.png" class="size-[100px] lg:size-[120px] "/>
+                    <img src="./assets/image/TripVendor Agence2/campin.png" class="size-[100px] lg:size-[120px] "/>
+                    <img src="./assets/image/TripVendor Agence2/forest2.png" class="size-[100px] lg:size-[120px] "/>
+                    <img src="./assets/image/TripVendor Agence2/world.png" class="size-[100px] lg:size-[120px] "/>
+                    <img src="./assets/image/TripVendor Agence2/wild forest.png" class="size-[100px] lg:size-[120px] "/>
+                    <img src="./assets/image/TripVendor Agence2/camping.png" class="wsize-[100px] lg:size-[120px] "/>
                 </div>
             </div>
         </div>
@@ -598,11 +608,12 @@ Tour with Optional Lunch</h3>
                 <div class="grid-1">
                     <p class="text-[16px] text-primary font-semibold font-nunito mb-[8px]">Discover Weekly Travelling</p>
                     <h2 class="text-[30px] text-black font-prompt font-bold mb-[14px] w-full lg:text-[48px] max-w-[414px]">Hot deals on select expedition departures</h2>
-                    <p class="text-[16px] lg:text-[20px] text-muted font-nunito font-medium mb-[34px] w-[500px] lg:max-w-[376px]">Curated destinations and tours that capture the true
+                    <p class="text-[16px] lg:text-[20px] text-muted font-nunito font-medium mb-[34px] w-[376px] lg:max-w-[500px]">Curated destinations and tours that capture the true
                         essence of location, ensuring you experience. Our
                         attraction pass save you more.</p>
                     
-                       <button class=" centre flex-row gap-[30px] rounded-full w-[200px] bg-primary lg:w-[232px] h-[60px] lg:h-[66px] ">
+                       <button class=" centre flex-row gap-[30px] rounded-full w-[200px] bg-primary lg:w-[232px] h-[60px] lg:h-[66px] 
+                        hover:bg-black transition duration-300 hover:scale-105">
                         <p class="text-[17px] text-white font-extrabold font-nunito ">Explore More </p>
                         <div class="centre size-[42px] flex-row lg:size-[48px] rounded-full bg-white">
                             <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
@@ -726,13 +737,13 @@ Car or by Walking</div>
                     </div>
 
                 </div>
-                <img src="./assets/image/team_guiding/guide1.png" class="size-[150px] sm:size-[200px]  lg:size-[258px] rounded-full absolute -top-16 sm:-top-10 lg:-top-1/3 left-1/2 -translate-x-1/2">
+                <img src="./assets/image/team_guiding/guide1.png" class="size-[150px] sm:size-[160px]  lg:size-[200px] xl:size-[250px] rounded-full absolute -top-5 lg:-top-1/3 left-1/2 -translate-x-1/2">
             </div>
 
             <div class="h-[358px] bg-white rounded-4xl shadow-[0_10px_70px_rgba(0,0,0,0.2)] p-6 relative">
                 <div class=" lg:w-[200px] xl:w-[270px] h-[165px] bg-white shadow-sm border border-dashed  border-[#15141536] absolute bottom-4 left-1/2 -translate-x-1/2 p-6 rounded-4xl text-center">
                     <p class=" text-[12px] lg:text-[16px] text-secondary font-semibold font-nunito mb-1 text-center ">Tourist Guide</p>
-                    <p class=" text-[18px] lg:text-[22px] text-black font-prompt font-semibold mb-5">Michel Smith</p>
+                    <p class=" text-[18px] lg:text-[22px] text-black font-prompt font-semibold mb-5">Arden Smith</p>
                     <div class="flex flex-row gap-3 justify-center">
                         <div class="row circle centre border border-[#231C2524] size-[32px] md:size-[39px]">
                             <i class="fa-brands fa-facebook-f" style="color:#455151;"></i>
@@ -752,13 +763,13 @@ Car or by Walking</div>
                     </div>
 
                 </div>
-                <img src="./assets/image/team_guiding/guide2.png" class="size-[150px] sm:size-[200px]  lg:size-[258px] rounded-full absolute -top-16 sm:-top-10 lg:-top-1/3 left-1/2 -translate-x-1/2">
+                <img src="./assets/image/team_guiding/guide2.png" class="size-[150px] sm:size-[160px]  lg:size-[200px] xl:size-[250px] rounded-full absolute -top-5 lg:-top-1/3 left-1/2 -translate-x-1/2">
             </div>
 
             <div class="h-[358px] bg-white rounded-4xl shadow-[0_10px_70px_rgba(0,0,0,0.2)] p-6 relative">
                 <div class="lg:w-[200px] xl:w-[270px] h-[165px] bg-white shadow-sm border border-dashed  border-[#15141536] absolute bottom-4 left-1/2 -translate-x-1/2 p-6 rounded-4xl text-center">
                     <p class="text-[16px] text-secondary font-semibold font-nunito mb-1 text-center ">Tourist Guide</p>
-                    <p class="text-[22px] text-black font-prompt font-semibold mb-5">Michel Smith</p>
+                    <p class="text-[22px] text-black font-prompt font-semibold mb-5">Clover Lilac</p>
                     <div class="flex flex-row gap-3 justify-center">
                         <div class="row circle centre border border-[#231C2524] size-[39px]">
                             <i class="fa-brands fa-facebook-f" style="color:#455151;"></i>
@@ -778,13 +789,13 @@ Car or by Walking</div>
                     </div>
 
                 </div>
-                <img src="./assets/image/team_guiding/guide3.png" class="size-[150px] sm:size-[200px]  lg:size-[258px] rounded-full absolute -top-16 sm:-top-10 lg:-top-1/3 left-1/2 -translate-x-1/2">
+                <img src="./assets/image/team_guiding/guide3.png" class="size-[150px] sm:size-[160px]  lg:size-[200px] xl:size-[250px] rounded-full absolute -top-5 lg:-top-1/3 left-1/2 -translate-x-1/2">
             </div>
 
             <div class="h-[358px] bg-white rounded-4xl shadow-[0_10px_70px_rgba(0,0,0,0.2)] p-6 relative">
                 <div class="lg:w-[200px] xl:w-[270px] h-[165px] bg-white shadow-sm border border-dashed  border-[#15141536] absolute bottom-4 left-1/2 -translate-x-1/2 p-6 rounded-4xl text-center">
                     <p class="text-[16px] text-secondary font-semibold font-nunito mb-1 text-center ">Tourist Guide</p>
-                    <p class="text-[22px] text-black font-prompt font-semibold mb-5">Michel Smith</p>
+                    <p class="text-[22px] text-black font-prompt font-semibold mb-5">Garrison Hale</p>
                     <div class="flex flex-row gap-3 justify-center">
                         <div class="row circle centre border border-[#231C2524] size-[39px]">
                             <i class="fa-brands fa-facebook-f" style="color:#455151;"></i>
@@ -804,7 +815,7 @@ Car or by Walking</div>
                     </div>
 
                 </div>
-                <img src="./assets/image/team_guiding/guide4.png" class="size-[150px] sm:size-[200px]  lg:size-[258px] rounded-full absolute -top-16 sm:-top-10 lg:-top-1/3 left-1/2 -translate-x-1/2">
+                <img src="./assets/image/team_guiding/guide4.png" class="size-[150px] sm:size-[160px]  lg:size-[200px] xl:size-[250px] rounded-full absolute -top-5 lg:-top-1/3 left-1/2 -translate-x-1/2">
             </div>
 
         </div>
@@ -813,23 +824,25 @@ Car or by Walking</div>
      </section>
 
      <!--section special offer-->
-     <section class="h-[1200px]">
+     <section class=" mb-30 lg:mb-50">
         <div class="main-container">
-            <div class="bg-background h-[890px] rounded-4xl px-3  py-[120px] relative ">
-                <p class="text-primary text-[16px] font-semibold font-nunito mb-2">Our Top Destination</p>
-                <div class="flex flex-row justify-between mb-4">
-                    <h2 class="h2">Inspiration for Future Travel</h2>
-                    <button class="w-[200px] h-[58px] md:w-[230px] md:h-[66px] border-none outline-0 rounded-full flex flex-row items-center justify-center gap-[26px] bg-secondary lg:gap-[30px]">
+            <div class="bg-background  rounded-4xl px-3 pt-[120px] relative">
+                <p class="text-primary text-[16px] font-semibold font-nunito mb-2 ">Our Top Destination</p>
+                <div class="flex flex-col gap-2 lg:flex-row  justify-between mb-4 ">
+                    <h2 class=" max-lg:text-[36px] h2 ">Inspiration for Future Travel</h2>
+                    <button class="w-[200px] h-[58px] md:w-[230px] md:h-[66px] border-none outline-0 
+                    rounded-full flex flex-row items-center justify-center gap-[26px] bg-secondary 
+                    lg:gap-[30px]  hover:bg-black transition duration-300 hover:scale-105">
                            <p class=" text-[14px] lg:text-[17px] font-nunito font-bold text-white">Explore More</p>
                             <div class="flex items-center justify-center bg-white size-[40px] lg:size-[48px] rounded-full">
                                 <i class="fa-solid fa-arrow-right" style="color:#000000;"></i>
                             </div>
                     </button>
                 </div>
-                <p class="text-muted text-[16px] font-medium font-normal mb-18 lg:max-w-[500px]">Our attraction passes save you more than buying individual tickets for your tour package system our attraction passes.</p>
+                <p class="text-muted text-[16px] font-medium font-normal mb-18 lg:max-w-[500px] ">Our attraction passes save you more than buying individual tickets for your tour package system our attraction passes.</p>
           
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 ">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/couple.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -839,15 +852,15 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Couple tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">4</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹499</span>
+                                <span class="text-[#F89A60] text-[12px] lg:text-[14px] font-bold font-nunito">4</span>
+                                <p class=" text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60] text-[12px] lg:text-[14px] font-bold font-nunito ">₹499</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/office.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -857,15 +870,15 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Office tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">4</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹499</span>
+                                <span class="text-[#F89A60] text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">4</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60] text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹499</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/food.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -875,15 +888,15 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Food tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">1</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹60</span>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">1</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹60</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/culture.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -893,15 +906,15 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Cultural tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">3</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹599</span>
+                                <span class="text-[#F89A60] text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">3</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹599</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/nature.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -911,15 +924,15 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Nature tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">7</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹299</span>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">7</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹299</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
                         <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
                             <img src="./assets/image/special/cruises.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
@@ -929,27 +942,27 @@ Car or by Walking</div>
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">Cruises tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">4</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹99</span>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">4</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹99</span>
                             </div>
                         </div>
                    
                     </div>
 
-                    <div class="h-[106px] rounded-xl flex flex-row p-6 gap-4 bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
+                    <div class=" rounded-xl flex flex-row p-6  gap-4 md:gap-2 xl:gap-4  bg-white shadow-[10px_9px_106.6px_55px_#05063C0A]">
                             <!-- هاي الصورة اللي جوا المستطيل-->
-                        <div class="size-[56px] bg-[#F89A60] rounded-full  row centre">
-                            <img src="./assets/image/special/city.png" class="w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
+                        <div class=" w-[56px]  bg-[#F89A60] rounded-full  row centre">
+                            <img src="./assets/image/special/city.png" class=" w-[40px] h-[40px] object-contain overflow-hidden rounded-full"/>
                         
                         </div>
                                 <!--اللي جوا المستطيل الكتابه-->
                         <div class="flex flex-col gap-2 items-start justify-start">
                             <p class="text-[16px] text-black font-prompt font-medium">City tours</p>
                             <div class="flex flex-row gap-[5px] items-center">
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito">4</span>
-                                <p class="text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
-                                <span class="text-[#F89A60] text-[14px] font-bold font-nunito ">₹199</span>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito">4</span>
+                                <p class="text-center whitespace-nowrap text-[12px] md:text-[13px] lg:text-[14] text-[#818181] font-nunito font-bold">Tours - Form</p>
+                                <span class="text-[#F89A60]  text-[12px] md:text-[13px] lg:text-[14] font-bold font-nunito ">₹199</span>
                             </div>
                         </div>
                    
@@ -957,31 +970,44 @@ Car or by Walking</div>
                       
                 </div>
                 
-                <div class="absolute -bottom-[300px] left-0 right-0 px-6">
-                        <div class="relative h-[500px] rounded-3xl overflow-hidden">
-                              <div class="bg-offer bg-cover bg-center bg-no-repeat h-full w-full"></div>
-                                  <div class="absolute inset-0 bg-black/70"></div>
-                                    <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-white text-center px-6">
-                                       <p class="text-secondary text-[16px] font-semibold font-nunito mb-2">Special Offer</p>
-                                       <h3 class="text-white text-[48px] font-prompt font-bold mb-[34px] max-w-[600px] text-center">Grab Up To 39% Off On Your Favorite Destination</h3>
-                                       <button class="w-[200px] h-[58px] md:w-[230px] md:h-[66px] border-none outline-0 rounded-full flex flex-row centre gap-[26px] bg-primary lg:gap-[30px] py-[21px] ">
-                                                <p class=" text-[14px] lg:text-[17px] font-nunito font-bold text-white">Explore More</p>
-                                                <div class="flex items-center justify-center bg-white size-[40px] lg:size-[48px] rounded-full">
-                                                  <i class="fa-solid fa-arrow-right" style="color:#000000;"></i>
-                                                </div>
-                                       </button>
-                                    </div>
+                
+  
+                    <div class="relative overflow-hidden rounded-3xl min-h-[200px] lg:h-[400px] translate-y-[100px] lg:translate-y-[200px] ">  
 
-                                    <div class="absolute size-[186px] top-[90px] left-[100px]">
-                                        <img src="./assets/image/special/logoo.png" class="w-full object-contain"/>
-                                    </div>
+                        <!-- Background -->
+                        <div class="absolute w-full h-full bg-offer bg-cover bg-center bg-no-repeat"></div>
 
-                                    <div class="absolute w-[420px] h-[380px] bottom-[100px] right-[90px]">
-                                        <img src="./assets/image/special/bag.png" class="w-full object-contain"/>
-                                   </div>
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black/70 "> 
+                            <!--content-->
+                            <div class="flex flex-col justify-center items-center  h-full">
+
+                                <p class="text-secondary text-[14px] font-nunito font-normal mb-1 lg:mb-2">Special Offer</p>
+                                <h2 class="max-lg:text-[30px] text-white h2 text-center max-w-[400px] lg:max-w-[600px] mb-3 lg:mb-9">Grab Up To 39% Off On Your Favorite Destination</h2>
+                                <button type="submit" class=" borde-none outline-0 bg-primary p-3  w-[180px] lg:w-[200px] h-[58px] lg:h-[66px] rounded-full flex flex-row items-center justify-center gap-[10px] lg:gap-[20px]
+                                 hover:bg-black transition duration-300 hover:scale-105">
+                                    <p class=" text-[14px] lg:text-[17px] font-nunito font-bold text-white whitespace-nowrap ">Explore More</p>
+                                    <div class="flex items-center justify-center bg-white size-[38px] lg:size-[48px] rounded-full">
+                                        <i class="fa-solid fa-arrow-right" style="color:#000000;"></i>
+                                    </div>
+                                </button>
+
+                            </div>
+
+                            <img src="./assets/image/special/logoo.png" class="size-[100px] md:size-[120px] lg:size-[180px]
+                                      rounded-full left-4 lg:left-2 xl:left-20 top-4  md:top-8 lg:top-[40px]  absolute"/>
 
                         </div>
-                </div>
+
+                        
+                        
+                        
+
+
+                    </div>
+ 
+               
+
 
 
             </div>
@@ -1205,7 +1231,8 @@ Car or by Walking</div>
 
                     <input type="email" placeholder="Enter your email" class=" w-full text-[#757575] text-[16px] font-normal font-nunito p-6 border-none outline-0  bg-white rounded-full " />
 
-                     <button class=" absolute top-2 right-3 border-none outline-0 rounded-full w-[150px] lg:w-[160px] h-[50px] lg:h-[57px]  flex items-center justify-center text-center gap-2 bg-primary text-white">
+                     <button class=" absolute top-2 right-3 border-none outline-0 rounded-full w-[150px] lg:w-[160px] h-[50px] lg:h-[57px]  flex items-center justify-center text-center gap-2 bg-primary text-white 
+                      hover:bg-black transition duration-300 hover:scale-105">
                         <p class="text-white text-[14px] lg:text-[16px] font-nunito font-normal">Subscribe </p>
                         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                      </button>
@@ -1315,7 +1342,7 @@ Car or by Walking</div>
         <div class="main-container">
             <div class="row justify-between py-[30px]">
                 <p class="text-[16px ] text-muted font-nunito font-medium">© 2025 TripVendor LLC All rights reserved.</p>
-                <button type="submit" class=" bg-white [100px] h-[40px] rounded-md border border-[#CCCCCC] row items-center justify-center p-3">
+                <button type="submit" class=" bg-white [100px] h-[40px] rounded-md border border-[#CCCCCC] row items-center justify-center p-3  hover:bg-black transition duration-300 hover:scale-105">
                     <img src="./assets/image/footer/flag.png" class="size-[17px]"/>
                     <p class="text-[14px] text-muted font-normal">EN</p>
                     <i class="fa-solid fa-angle-down" style="color: #6E6E6E;"></i>
