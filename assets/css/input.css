@@ -52,6 +52,12 @@
     }
 }
 
+@layer utilities{
+    .bg-hero2{
+       background-image: url('../image/page2/hero_section/bg-hero2.png');
+    }
+}
+
 
 
 @utility test{
