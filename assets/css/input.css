@@ -58,6 +58,12 @@
     }
 }
 
+@layer utilities{
+    .bg-design{
+        background-image: url('../image/page2/sec7/design.jpg');
+    }
+}
+
 
 
 @utility test{
@@ -84,15 +90,8 @@
 
 @utility navbar-link{
     @apply text-sm font-medium cursor-pointer;
-}
-
-@layer components{
-
- .title__h5{
-    text-[16px] text-primary font-nunito  font-semibold;
-}
-}
-
+ }
+ 
 @layer components {
   .btn-primary {
     @apply border-none outline-none bg-[#4D40CA] flex  items-center justify-center text-white font-nunito px-4 py-2 rounded-4xl gap-2
