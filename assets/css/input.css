@@ -80,15 +80,17 @@
 @utility centre{
     @apply flex items-center justify-center;
 }
-
-@utility container{
-  
-    @apply mx-auto;
- }
-
+ 
 
 @utility navbar-link{
     @apply text-sm font-medium cursor-pointer;
+}
+
+@layer components{
+
+ .title__h5{
+    text-[16px] text-primary font-nunito  font-semibold;
+}
 }
 
 @layer components {
