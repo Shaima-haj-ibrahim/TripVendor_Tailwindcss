@@ -12,13 +12,11 @@
 <body>
 
     
-    <!--section header-->
+    <!--header-->
+  <header class="flex flex-col w-full ">
 
-    <header class="py-5 bg-black ">
-
-     <div class="main-container ">
-     
-      <div class=" flex flex-col md:flex-row  md:justify-between md:items-center gap-4">
+    <div class="bg-black main-container py-4">
+      <div class=" flex flex-col md:flex-row  md:justify-between md:items-center gap-4 h-full">
         <div class="left flex flex-col sm:flex-row  gap-4 sm:gap-8 "> 
             <div class="row items-center gap-2 hover:text-white transition duration-300 text-[16px] text-white/65 font-nunito ">
                 <i class="fa-solid fa-envelope" ></i>
@@ -40,50 +38,43 @@
            <i class="fa-brands fa-linkedin-in hover:text-white hover:scale-110 transition duration-300 cursor-pointer" ></i>
         </div>
       </div>
+    </div>
 
-     </div>
+    <div class="bg-white main-container">
+      <div class="row  max-lg:justify-between w-full">
 
-    </header>
-    
-    <!--main-->
+        <img src="./assets/image/logo.png" class="w-[150px] lg:w-[170px] h-auto"/>
 
-    <main>
-
-    <!-- section header part2-->
-        <section>
-            <div class="main-container bg-white">
-                 <div class="row  max-lg:justify-between w-full ">
-
-                    <img src="./assets/image/logo.png" class="w-[150px] lg:w-[170px] h-auto"/>
-
-                    <div class=" hidden lg:row gap-11 ms-auto mr-8 ">
-                    <ul class="row gap-[30px] font-nunito">
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">Home</li>
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">Tours</li>
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">Destinations</li>
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">Pages</li>
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">FAQ </li>
-                        <li class="hover:text-primary transition duration-300 cursor-pointer">Contact</li>
-                    </ul>
+        <div class=" hidden lg:row gap-11 ms-auto mr-8 ">
+          <ul class="row gap-[30px] font-nunito">
+            <li class="hover:text-primary transition duration-300 cursor-pointer">Home</li>
+            <li class="hover:text-primary transition duration-300 cursor-pointer">Tours</li>
+            <li class="hover:text-primary transition duration-300 cursor-pointer">Destinations</li>
+            <li class="hover:text-primary transition duration-300 cursor-pointer">Pages</li>
+            <li class="hover:text-primary transition duration-300 cursor-pointer">FAQ </li>
+            <li class="hover:text-primary transition duration-300 cursor-pointer">Contact</li>
+          </ul>
                     
-                    <i class="fa-solid fa-arrow-right-to-bracket text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
-                    <i class="fa-solid fa-magnifying-glass text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
+          <i class="fa-solid fa-arrow-right-to-bracket text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
+          <i class="fa-solid fa-magnifying-glass text-[#151415] hover:text-gray-700 transition duration-300 cursor-pointer ml-8"></i>
                    
-                </div>
+        </div>
 
-                    <button class=" hover:bg-black transition-all duration-300 hover:scale-105
-                         border-none outline-0 w-[150px] xl:w-[180px] h-[60px] xl:h-[70px]
-                          bg-[#4D40CA] row gap-[16px] centre text-white font-nunito">
+        <button class=" hover:bg-black transition-all duration-300 hover:scale-105
+          border-none outline-0 w-[150px] xl:w-[180px] h-[60px] xl:h-[70px]
+          bg-[#4D40CA] row gap-[16px] centre text-white font-nunito">
 
-                            <p>Explore more</p>
-                             <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+          <a href="./home.html" class="text-white "> Explore More <br/>next page!! </a>
+          <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
 
-                    </button>
+        </button>
 
-                 </div>
+      </div>
+    </div>
 
-            </div>
-        </section>  
+  </header>
+  
+    <!--main-->
 
     <!--section hero-->
     <section class="hero w-full min-h-screen h-auto relative lg:h-[830px] max-lg:mb-20">
