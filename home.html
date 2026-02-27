@@ -556,23 +556,34 @@
     </section>
 
     <!--section weekly travelling-->
-    <section class="main-container bg-[#FFEEE3]">
+     <section class="relative main-container py-20 lg:py-30 bg-[#FFEEE3]">
 
-      <div class="relative overflow-hidden">
-      
-        <img src="./assets/image/page2/sec9/section9_bg.jpg" class=" w-full h-full rounded-4xl overflow-hidden"/>
-      
-        <div class="absolute inset-0 bg-black/81 rounded-4xl "></div>  
-      
-        <p class="text-primary text-[14px] lg:text-[16px] font-nunito font-semibold absolute z-10 top-[120px] left-1/2 -translate-x-1/2">Discover Weekly Travelling</p>
-      
-        <h2 class="max-lg:text-[38px] h2 text-white text-center  absolute z-10 top-[150px] left-1/2 -translate-x-1/2 leading-tight">Hot deals on select <br/> expedition departures</h2>
-        <!--cards-->
-      <div class="overflow-x-hidden absolute z-10 bottom-0 lg:bottom-[230px]  gap-[30px] lg:px-[100px] ">
+    <!-- Background -->
+    <div class="absolute inset-0 ">
+      <img src="./assets/image/page2/sec9/section9_bg.jpg"
+         class="w-full h-full object-cover rounded-4xl" />
+      <div class="absolute inset-0 bg-black/80 rounded-4xl "></div>
+    </div>
 
-        <div class="flex flex-col xl:flex-row gap-[30px]">
-          
-          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] ">
+  <!-- Content -->
+  <div class="relative w-full mx-auto">
+
+    <!--title-->
+    <div class="text-center mb-[35px] lg:mb-[50px]">
+      <p class="text-primary text-[16px] font-semibold font-nunito mb-2">
+        Discover Weekly Traveling
+      </p>
+
+      <h2 class="text-white text-[36px] md:text-[40px] lg:text-[48px] font-bold leading-tight font-prompt w-full mx-auto lg:max-w-[535px] text-center">
+        Hot Deals On Select
+        Expedition Departures
+      </h2>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg::grid-cols-3 xl:grid-cols-4 xl:grid-cols-5">
+
+      <div class="min-h-[512px] bg-white rounded-4xl relative p-[10px] hover:scale-105 transition duration-300">
 
             <div class="relative">
               <img src="./assets/image/page2/sec9/photo1.png" class=" w-full h-[230px] object-cover overflow-hidden rounded-4xl"/>
@@ -609,9 +620,9 @@
                        
             
 
-          </div> 
+      </div> 
 
-          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] ">
+      <div class="h-[512px] bg-white rounded-4xl relative p-[10px] hover:scale-105 transition duration-300">
 
             <div class="relative">
               <img src="./assets/image/page2/sec9/photo2.png" class=" w-full h-[230px] object-cover overflow-hidden rounded-4xl"/>
@@ -648,9 +659,9 @@
                        
             
 
-          </div> 
+      </div>
 
-          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] ">
+      <div class="h-[512px] bg-white rounded-4xl relative p-[10px] hover:scale-105 transition duration-300">
 
             <div class="relative">
               <img src="./assets/image/page2/sec9/photo3.png" class=" w-full h-[230px] object-cover overflow-hidden rounded-4xl"/>
@@ -689,7 +700,7 @@
 
           </div> 
 
-          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] ">
+          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] hover:scale-105 transition duration-300">
 
             <div class="relative">
               <img src="./assets/image/page2/sec9/photo4.png" class=" w-full h-[230px] object-cover overflow-hidden rounded-4xl"/>
@@ -714,12 +725,12 @@
 
             <p class="text-black text-[18px] font-semibold font-prompt absolute left-[30px] bottom-[154px]">Park Guell Guided Tour <br/> with Skip the Line Ticket</p>
              
-            <div class="row gap-1 absolute left-[30px] bottom-[100px]">
+            <div class="row gap-2 absolute left-[28px] bottom-[80px]">
                <i class="fa-solid fa-location-dot" style="color: #FB5B32;"></i>
-               <span class="text-[16px] font-medium font-nunito text-[#818181]">  Cow Canyon Road, Nye <br/> County, Nevada, United States</span>
+               <span class="text-[16px] font-medium font-nunito text-[#818181] mt-12">  Cow Canyon Road, Nye  <br/> County, Nevada, United States</span>
             </div>
 
-            <div class="row gap-1 absolute left-[30px] bottom-[60px]">
+            <div class="row gap-1 absolute left-[30px] bottom-[50px]">
              <i class="fa-solid fa-calendar" style="color: #FB5B32;"></i>
              <span class="text-[16px] font-medium font-nunito text-[#818181]"> 4 days 3 night</span>
             </div>
@@ -728,7 +739,7 @@
 
           </div> 
 
-          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] ">
+          <div class="h-[512px] bg-white rounded-4xl relative p-[10px] hover:scale-105 transition duration-300">
 
             <div class="relative">
               <img src="./assets/image/page2/sec9/photo5.png" class=" w-full h-[230px] object-cover overflow-hidden rounded-4xl"/>
@@ -766,15 +777,22 @@
             
 
           </div> 
-          
-        </div>
 
-      </div>
-      <!--cards-->
+    </div>
 
-      </div>  
-      
-    </section>
+    <!-- Dots -->
+    <div class="flex justify-center gap-2 mt-[60px]">
+      <div class="size-[7px] rounded-full bg-white"></div>
+      <div class="w-8 h-2 bg-primary rounded-[30px]"></div>
+      <div class="size-[7px] rounded-full bg-white"></div>
+      <div class="size-[7px] rounded-full bg-white"></div>
+      <div class="size-[7px] rounded-full bg-white"></div>
+    </div>
+
+  </div>
+
+ 
+     </section>
 
     <!--section Testimonial-->
     <section class="bg-[#FFEEE3] main-container py-[120px] relative  2xl:px-[150px]">
@@ -1122,11 +1140,7 @@
 
      </section>
 
-   
-
-   
-
-  </main>
+   </main>
 
 </body>
 </html>
