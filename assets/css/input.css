@@ -70,6 +70,12 @@
     }
 }
 
+@layer utilities{
+    .bg-hero4{
+        background-image: url('../image/page3/sec5/hero4.png');
+    }
+}
+
 
 
 
