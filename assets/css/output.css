@@ -2060,6 +2060,16 @@
       }
     }
   }
+  .hover\:scale-905 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 905%;
+        --tw-scale-y: 905%;
+        --tw-scale-z: 905%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:bg-black {
     &:hover {
       @media (hover: hover) {
