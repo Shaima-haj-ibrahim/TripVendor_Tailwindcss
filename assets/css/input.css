@@ -96,6 +96,12 @@
     }
 }
 
+@layer utilities{
+    .bg-hero9{
+        background-image: url('../image/page4/sec1/bg.png');
+    }
+}
+
 
 
 
