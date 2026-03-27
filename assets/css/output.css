@@ -14,6 +14,7 @@
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-black: #000;
     --color-white: #fff;
@@ -762,9 +763,21 @@
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
   }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
   .size-13 {
     width: calc(var(--spacing) * 13);
     height: calc(var(--spacing) * 13);
+  }
+  .size-20 {
+    width: calc(var(--spacing) * 20);
+    height: calc(var(--spacing) * 20);
+  }
+  .size-30 {
+    width: calc(var(--spacing) * 30);
+    height: calc(var(--spacing) * 30);
   }
   .size-\[7px\] {
     width: 7px;
@@ -931,6 +944,9 @@
   }
   .h-\[19px\] {
     height: 19px;
+  }
+  .h-\[20px\] {
+    height: 20px;
   }
   .h-\[25px\] {
     height: 25px;
@@ -1123,6 +1139,9 @@
   }
   .w-\[56px\] {
     width: 56px;
+  }
+  .w-\[80px\] {
+    width: 80px;
   }
   .w-\[100px\] {
     width: 100px;
@@ -1629,6 +1648,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
+  .rounded-\[1\] {
+    border-radius: 1;
+  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
@@ -1821,6 +1843,9 @@
   }
   .border-\[\#\] {
     border-color: #;
+  }
+  .border-gray-500 {
+    border-color: var(--color-gray-500);
   }
   .border-primary {
     border-color: var(--color-primary);
